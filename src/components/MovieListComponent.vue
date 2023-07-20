@@ -21,11 +21,10 @@ export default {
     },
     getCoverImageUrl(posterPath) {
       const baseImageUrl = "https://image.tmdb.org/t/p/";
-      const imageSize = "w342"; // Dimensione desiderata, puoi cambiare a seconda delle tue esigenze
+      const imageSize = "w342";
       return baseImageUrl + imageSize + posterPath;
     },
     getRoundedRating(rating) {
-      // Trasforma il voto da 1 a 10 in un numero intero da 1 a 5
       return Math.round(rating / 2);
     },
   },

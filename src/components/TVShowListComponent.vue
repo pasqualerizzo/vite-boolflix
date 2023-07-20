@@ -13,13 +13,11 @@
             } else if (lang === "fr") {
             return "URL_DELLA_BANDIERA_FRANCIA";
             }
-            // Aggiungi altre condizioni per le lingue e gli URL delle rispettive bandiere qui
-            // Se la lingua non è presente tra le condizioni, puoi restituire un'immagine di default o un URL vuoto
             return "URL_IMMAGINE_DEFAULT_O_VUOTO";
         },
         getCoverImageUrl(posterPath) {
         const baseImageUrl = "https://image.tmdb.org/t/p/";
-        const imageSize = "w342"; // Dimensione desiderata, puoi cambiare a seconda delle tue esigenze
+        const imageSize = "w342";
         return baseImageUrl + imageSize + posterPath;
         },
     },
