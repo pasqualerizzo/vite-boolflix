@@ -1,22 +1,22 @@
 <script>
+import MovieListComponent from "./MovieListComponent.vue";
+
 export default {
-    name: "MainComponent",
-    data() {
-        return {
-
-        }
-    },
-    methods: {
-
-    }
-}
+  name: "MainComponent",
+  components: {
+    MovieListComponent,
+  },
+  props: {
+    movies: Array,
+  },
+};
 </script>
 
 <template>
     <main>
-        MAIN
+        <MovieListComponent :movies="movies" />
     </main>
-</template>
+  </template>
 
 <style lang="scss" scoped>
 @use "../assets/scss/partials/variables.scss" as *;
